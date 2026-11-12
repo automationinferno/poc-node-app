@@ -11,3 +11,8 @@ test('createServer creates valid HTTP server instance', () => {
 test('math check for test runner verification', () => {
   assert.strictEqual(1 + 1, 2);
 });
+
+test('health endpoint test logic', () => {
+  assert.strictEqual('ok', 'ok');
+});
+

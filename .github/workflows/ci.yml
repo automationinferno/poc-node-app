@@ -17,6 +17,8 @@ permissions: {}
 jobs:
   call-node-ci:
     name: Run Node CI Pipeline
+    permissions:
+      contents: read
     uses: automationinferno/gha-shared-library/.github/workflows/reusable-node-ci.yml@v1
     with:
       node-version-file: '.nvmrc'

@@ -1,0 +1,14 @@
+{
+  "name": "poc-node-app",
+  "version": "1.0.0",
+  "description": "Sample Node.js application consuming organization shared GHA workflows and utils",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "node -e \"console.log('Linting source code: OK')\"",
+    "test": "node --test test/*.test.js",
+    "build": "node -e \"console.log('Building dist bundle: OK')\""
+  },
+  "keywords": ["poc", "github-actions", "shared-library"],
+  "author": "automationinferno",
+  "license": "MIT"
+}

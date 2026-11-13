@@ -1,0 +1,17 @@
+name: Release Publish
+
+on:
+  release:
+    types: [published]
+
+permissions: {}
+
+jobs:
+  publish-release:
+    name: Publish Release
+    permissions:
+      contents: read
+      packages: write
+    uses: automationinferno/gha-shared-library/.github/workflows/reusable-release-publish.yml@v1
+    with:
+      stack: 'node'

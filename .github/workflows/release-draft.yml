@@ -1,0 +1,20 @@
+name: Release Drafter
+
+on:
+  push:
+    branches:
+      - main
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited, labeled, unlabeled]
+    branches:
+      - main
+
+permissions: {}
+
+jobs:
+  draft-release:
+    name: Draft Release
+    permissions:
+      contents: write
+      pull-requests: read
+    uses: automationinferno/gha-shared-library/.github/workflows/reusable-release-drafter.yml@v1
